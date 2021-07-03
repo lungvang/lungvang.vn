@@ -3,7 +3,7 @@ import { jsx } from "theme-ui";
 import React from 'react';
 import { PageProps } from "gatsby";
 
-export default function IndexRoute(props: PageProps) {
+export default function IndexPage(props: PageProps) {
   return (
     <React.Fragment>
       <header
