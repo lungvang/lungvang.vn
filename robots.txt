@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.lungvang.vn/sitemap.xml
+Host: https://www.lungvang.vn
