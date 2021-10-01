@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import SEO from "../components/seo";
+import SEO from "components/seo";
 import Layout from "components/layout";
 import Banner from "sections/banner";
 import Subscribe from "sections/subscribe";
