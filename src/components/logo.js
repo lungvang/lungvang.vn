@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx, Image } from 'theme-ui';
-import { Link } from 'components/link';
-import logo from 'assets/images/logo.svg';
-import logoWhite from 'assets/images/logo-white.svg';
+import { jsx, Image } from "theme-ui";
+import { Link } from "components/link";
+import logo from "assets/images/logo.png";
+import logoWhite from "assets/images/logo-white.png";
 
 export default function Logo({ isWhite, ...props }) {
   return (
@@ -18,11 +18,11 @@ export default function Logo({ isWhite, ...props }) {
 }
 const styles = {
   logo: {
-    alignItems: 'center',
-    cursor: 'pointer',
-    display: 'inline-flex',
+    alignItems: "center",
+    cursor: "pointer",
+    display: "inline-flex",
     img: {
-      maxWidth: [150, '100%'],
+      maxWidth: [150, "100%"],
     },
   },
 };

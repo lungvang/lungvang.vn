@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Container, Button, Image } from 'theme-ui';
-import Sticky from 'react-stickynode';
-import Logo from 'components/logo';
-import { NavLink } from 'components/link';
-import { DrawerProvider } from 'contexts/drawer/drawer-provider';
-import NavbarDrawer from './navbar-drawer';
-import menuItems from './header.data';
-import lock from 'assets/images/icons/lock.png';
+import { jsx, Box, Flex, Container, Button, Image } from "theme-ui";
+import Sticky from "react-stickynode";
+import Logo from "components/logo";
+import { NavLink } from "components/link";
+import { DrawerProvider } from "contexts/drawer/drawer-provider";
+import NavbarDrawer from "./navbar-drawer";
+import menuItems from "./header.data";
+import lock from "assets/images/icons/lock.png";
 
 export default function Header() {
   return (
@@ -29,10 +29,10 @@ export default function Header() {
                 <Flex sx={styles.buttonGroup}>
                   <Button variant="text" sx={styles.login}>
                     <Image src={lock} width="19" height="23" alt="lock icon" />
-                    Login
+                    Đăng nhập
                   </Button>
                   <Button variant="primary" sx={styles.donateNow}>
-                    Donate Now
+                    ĐẶT CỌC NGAY
                   </Button>
                 </Flex>
                 <NavbarDrawer />
@@ -47,58 +47,58 @@ export default function Header() {
 
 const styles = {
   headerWrapper: {
-    backgroundColor: 'transparent',
-    '.is-sticky': {
+    backgroundColor: "transparent",
+    ".is-sticky": {
       header: {
-        backgroundColor: 'white',
-        boxShadow: '0 6px 13px rgba(38,78,118,0.1)',
-        paddingTop: '15px',
-        paddingBottom: '15px',
+        backgroundColor: "white",
+        boxShadow: "0 6px 13px rgba(38,78,118,0.1)",
+        paddingTop: "15px",
+        paddingBottom: "15px",
       },
     },
   },
   header: {
-    position: 'fixed',
+    position: "fixed",
     left: 0,
     right: 0,
     py: 4,
-    transition: 'all 0.3s ease-in-out 0s',
-    '&.is-mobile-menu': {
-      backgroundColor: 'white',
+    transition: "all 0.3s ease-in-out 0s",
+    "&.is-mobile-menu": {
+      backgroundColor: "white",
     },
   },
   headerInner: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   logo: {
     mr: [null, null, null, null, 6, 12],
   },
   navbar: {
-    display: ['none', null, null, null, 'flex'],
-    alignItems: 'center',
+    display: ["none", null, null, null, "flex"],
+    alignItems: "center",
     flexGrow: 1,
     // justifyContent: 'center',
   },
   navList: {
-    display: ['flex'],
-    listStyle: 'none',
+    display: ["flex"],
+    listStyle: "none",
     flexGrow: 1,
     p: 0,
-    '.nav-item': {
-      cursor: 'pointer',
+    ".nav-item": {
+      cursor: "pointer",
       fontWeight: 400,
       padding: 0,
-      margin: [null, null, null, null, '0 20px'],
+      margin: [null, null, null, null, "0 20px"],
     },
-    '.active': {
-      color: 'primary',
+    ".active": {
+      color: "primary",
     },
   },
   buttonGroup: {
-    alignItems: 'center',
-    marginLeft: 'auto',
+    alignItems: "center",
+    marginLeft: "auto",
     marginRight: [4, 6],
     button: {
       fontWeight: 500,
@@ -109,23 +109,23 @@ const styles = {
     mr: [null, null, null, null, 6],
     img: {
       mr: 2,
-      maxWidth: [12, 15, '100%'],
+      maxWidth: [12, 15, "100%"],
     },
   },
   donateNow: {
-    display: ['none', null, null, null, 'flex'],
+    display: ["none", null, null, null, "flex"],
     minHeight: [30, null, null, 45],
-    px: ['12px', null, null, 4],
-    fontSize: [0, null, null, '15px'],
+    px: ["12px", null, null, 4],
+    fontSize: [0, null, null, "15px"],
   },
   closeButton: {
-    height: '32px',
-    padding: '4px',
-    minHeight: 'auto',
-    width: '32px',
-    ml: '3px',
+    height: "32px",
+    padding: "4px",
+    minHeight: "auto",
+    width: "32px",
+    ml: "3px",
     path: {
-      stroke: 'text',
+      stroke: "text",
     },
   },
 };

@@ -4,8 +4,16 @@ export default [
     label: "Trang chủ",
   },
   {
+    path: "loan",
+    label: "Cho vay",
+  },
+  {
     path: "services",
     label: "Đầu tư",
+  },
+  {
+    path: "consign",
+    label: "Ký gửi",
   },
   {
     path: "about",
@@ -13,6 +21,6 @@ export default [
   },
   {
     path: "blog",
-    label: "Blog",
+    label: "Tin tức",
   },
 ];

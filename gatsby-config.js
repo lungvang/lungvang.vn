@@ -77,14 +77,6 @@ module.exports = {
         icon: `src/assets/images/lungvang-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-web-font-loader`,
-      options: {
-        google: {
-          families: ["DM Sans"],
-        },
-      },
-    },
     // {
     //   resolve: `gatsby-plugin-mailchimp`,
     //   options: {
