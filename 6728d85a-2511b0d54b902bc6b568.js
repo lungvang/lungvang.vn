@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklungvang_vn=self.webpackChunklungvang_vn||[]).push([[158],{9845:function(n,t,e){e.d(t,{nfZ:function(){return a}});var u=e(1046);function a(n){return(0,u.w_)({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",stroke:"#000",strokeWidth:"2",d:"M3,3 L21,21 M3,21 L21,3"}}]})(n)}}}]);
+//# sourceMappingURL=6728d85a-2511b0d54b902bc6b568.js.map

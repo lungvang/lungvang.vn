@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklungvang_vn=self.webpackChunklungvang_vn||[]).push([[117],{3167:function(n,u,t){t.r(u),t.d(u,{default:function(){return g}});var l=t(977),e=t(3751),i=t(6905),s=t(993),c=t(8796);function g(){return(0,l.tZ)(i.Z,null,(0,l.tZ)(e.Z,{title:"Công ty Quản lý Tài sản Lũng Vàng",description:"Công ty quản lý và số hoá tài sản, cho vay, đầu tư và quản lý quỹ."}),(0,l.tZ)(s.Z,null),(0,l.tZ)(c.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-consign-js-6f006e56c1bb806f2c16.js.map
