@@ -1,12 +1,14 @@
 /** @jsx jsx */
-import { jsx, Box, Image, Button, MenuButton } from 'theme-ui';
+import { jsx, Box, Image, Button } from 'theme-ui';
+import { IoMdMenu } from 'react-icons/io';
 import React, { useContext } from 'react';
 import { Link } from 'react-scroll';
-import { DrawerContext } from '../../contexts/drawer/drawer-context';
-import Drawer from '../drawer';
-import Logo from '../logo';
+import { rgba } from 'polished';
+import { DrawerContext } from 'contexts/drawer/drawer-context';
+import Drawer from 'components/drawer';
+import Logo from 'components/logo';
 import menuItems from './header.data';
-import close from '../../assets/images/icons/close.png';
+import close from 'assets/images/icons/close.png';
 
 const NavbarDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -24,7 +26,7 @@ const NavbarDrawer = () => {
       placement="right"
       drawerHandler={
         <Box sx={styles.handler}>
-          <MenuButton />
+          <IoMdMenu size="26px" />
         </Box>
       }
       open={state?.isOpen}
@@ -108,9 +110,8 @@ const styles = {
     flexDirection: 'column',
   },
   logo: {
-    ml: 6,
-    mb: 9,
-    mr: 12,
+    ml: 30,
+    mb: 45,
   },
   navbar: {
     listStyle: 'none',
@@ -119,9 +120,10 @@ const styles = {
     'li > a': {
       backgroundColor: 'transparent',
       borderTop: (t) => `1px solid ${t.colors.borderColor}`,
+      color: rgba('#02073E', 0.4),
       display: 'flex',
       alignItems: 'center',
-      color: 'heading',
+      fontWeight: 500,
       minHeight: 44,
       marginLeft: 6,
       position: 'relative',

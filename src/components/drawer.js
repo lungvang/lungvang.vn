@@ -1,22 +1,6 @@
 import React, { Fragment } from 'react';
 import { Box } from 'theme-ui';
 import RcDrawer from 'rc-drawer';
-import 'rc-drawer/assets/index.css';
-import { IPlacement } from 'rc-drawer/lib/IDrawerPropTypes';
-
-type DrawerProps = {
-  className: string;
-  children: React.ReactNode;
-  closeButton: React.ReactNode;
-  closeButtonStyle: {};
-  drawerHandler: React.ReactNode;
-  toggleHandler: () => void;
-  open: boolean;
-  width: string | number;
-  placement: IPlacement;
-  drawerStyle: {};
-  closeBtnStyle: {};
-}
 
 const Drawer = ({
   className,
@@ -31,7 +15,7 @@ const Drawer = ({
   drawerStyle,
   closeBtnStyle,
   ...props
-}: DrawerProps) => {
+}) => {
   return (
     <Fragment>
       <RcDrawer
