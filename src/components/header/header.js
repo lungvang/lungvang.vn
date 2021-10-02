@@ -32,7 +32,7 @@ export default function Header() {
                     Đăng nhập
                   </Button>
                   <Button variant="primary" sx={styles.donateNow}>
-                    ĐẶT CỌC NGAY
+                    ĐẦU TƯ NGAY
                   </Button>
                 </Flex>
                 <NavbarDrawer />
