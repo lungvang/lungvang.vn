@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Công ty Cổ phần Lũng Vàng`,
+    title: `Công ty Cổ phần Lũng Vàng`,
     siteTitleAlt: `Lung Vang`,
     siteHeadline: `Lung Vang`,
-    siteDescription: `Công ty Cổ phần Lũng Vàng`,
+    description: `Công ty Cổ phần Lũng Vàng`,
     siteUrl: `https://lungvang.vn`,
     siteLanguage: `vi`,
     siteImage: `/banner.jpg`,
