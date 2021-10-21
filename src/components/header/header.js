@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Button, Image } from "theme-ui";
+import { navigate } from "gatsby";
 import Sticky from "react-stickynode";
 import Logo from "components/logo";
 import { NavLink } from "components/link";
@@ -7,6 +8,7 @@ import { DrawerProvider } from "contexts/drawer/drawer-provider";
 import NavbarDrawer from "./navbar-drawer";
 import menuItems from "./header.data";
 import lock from "assets/images/icons/lock.png";
+import { isLoggedIn, logout } from "../../services/auth";
 
 export default function Header() {
   return (
@@ -27,10 +29,41 @@ export default function Header() {
                   </Box>
                 </Flex>
                 <Flex sx={styles.buttonGroup}>
-                  <Button variant="text" sx={styles.login}>
-                    <Image src={lock} width="19" height="23" alt="lock icon" />
-                    Đăng nhập
-                  </Button>
+                  {isLoggedIn() ? (
+                    <Button
+                      variant="text"
+                      sx={styles.login}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        logout(() => navigate(`/app/login`));
+                      }}
+                    >
+                      <Image
+                        src={lock}
+                        width="19"
+                        height="23"
+                        alt="lock icon"
+                      />
+                      Đăng xuất
+                    </Button>
+                  ) : (
+                    <Button
+                      variant="text"
+                      sx={styles.login}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        navigate(`/app/login`);
+                      }}
+                    >
+                      <Image
+                        src={lock}
+                        width="19"
+                        height="23"
+                        alt="lock icon"
+                      />
+                      Đăng nhập
+                    </Button>
+                  )}
                   <Button variant="primary" sx={styles.donateNow}>
                     ĐẦU TƯ NGAY
                   </Button>
