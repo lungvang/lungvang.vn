@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Image, Container } from "theme-ui";
-import { useStaticQuery, graphql } from "gatsby";
 import SectionHeading from "components/section-heading";
 import worldMap from "assets/images/world-map.png";
 

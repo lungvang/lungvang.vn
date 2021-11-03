@@ -2,7 +2,7 @@
 import { jsx, Box, Image, Container } from "theme-ui";
 import { useStaticQuery, graphql } from "gatsby";
 import DonationForm from "components/donation-form";
-import banner from "../assets/images/banner.png";
+import banner from "assets/images/banner.png";
 
 const Banner = () => {
   return (

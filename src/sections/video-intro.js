@@ -10,7 +10,6 @@ import {
   Button,
   Heading,
   Text,
-  Image as Img,
 } from "theme-ui";
 import Modal, { CloseButton } from "components/modal/modal";
 import ResponsiveIframe from "components/responsive-iframe";
@@ -58,7 +57,7 @@ const VideoIntro = () => {
               sx={styles.playPause}
               onClick={() => setIsOpen(true)}
             >
-              <Img width="22" height="22" src={play} alt="play" /> Watch Full
+              <Image width="22" height="22" src={play} alt="play" /> Watch Full
               video
             </Button>
           </Box>
