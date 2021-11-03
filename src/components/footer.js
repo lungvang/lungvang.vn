@@ -6,19 +6,19 @@ import Logo from "components/logo";
 
 const menuItems = [
   {
-    path: "/",
+    path: "#home",
     label: "Trang chủ",
   },
   {
-    path: "/loan",
+    path: "#loan",
     label: "Cho vay",
   },
   {
-    path: "/invest",
+    path: "#invest",
     label: "Đầu tư",
   },
   {
-    path: "/consign",
+    path: "#consign",
     label: "Ký gửi",
   },
   {
