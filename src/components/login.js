@@ -1,6 +1,7 @@
 import React from "react";
 import { navigate } from "gatsby";
 import { handleLogin, isLoggedIn } from "../services/auth";
+import { Box, Button, Heading, Input, Label } from "@theme-ui/components";
 
 class Login extends React.Component {
   state = {
@@ -25,8 +26,8 @@ class Login extends React.Component {
     }
 
     return (
-      <>
-        <h1>Log in</h1>
+      <Box>
+        <Heading>Log in</Heading>
         <form
           method="post"
           onSubmit={(event) => {
@@ -34,21 +35,21 @@ class Login extends React.Component {
             navigate(`/app/profile`);
           }}
         >
-          <label>
+          <Label>
             Username
-            <input type="text" name="username" onChange={this.handleUpdate} />
-          </label>
-          <label>
+            <Input type="text" name="username" onChange={this.handleUpdate} />
+          </Label>
+          <Label>
             Password
-            <input
+            <Input
               type="password"
               name="password"
               onChange={this.handleUpdate}
             />
-          </label>
-          <input type="submit" value="Log In" />
+          </Label>
+          <Button variant="primary">Login</Button>
         </form>
-      </>
+      </Box>
     );
   }
 }
