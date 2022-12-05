@@ -17,10 +17,10 @@ const HeroSection: FC<HeroSectionProps> = ({ }) => {
               Freelancers use Builler to acept payments and send invoices to client with a single click
             </Text>
 
-            <Button mt={8} colorScheme="brand" onClick={() => {
+            <Button mt={8} onClick={() => {
               window.open("https://gobiz.lungvang.vn", "_blank");
             }}>
-                I need this for $10/month ->
+                I need this for $10/month 
             </Button>
 
             <Text my={2} fontSize="sm" color="gray.500">
